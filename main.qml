@@ -11,6 +11,7 @@ ApplicationWindow {
     x: (Screen.width - width) / 2
     y: (Screen.height - height) / 2
     title: "PySide6 + QML"
+    color: "white"
 
     // -----------------------
     // Start Button
@@ -89,6 +90,7 @@ ApplicationWindow {
             font.family: "Comic Sans MS"
             font.bold: true
             anchors.horizontalCenter: parent.horizontalCenter
+            color: "black"
 
         }
 
@@ -111,6 +113,7 @@ ApplicationWindow {
                 font.family: "Comic Sans MS"
                 leftPadding: 15
                 verticalAlignment: TextInput.AlignVCenter
+                color: "black"
 
                 background: Rectangle {
                     color: "white"
@@ -170,6 +173,7 @@ ApplicationWindow {
         anchors.top: contentColumn.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.topMargin: 20
+        color: "black"
         visible: false
 
     }
@@ -188,6 +192,7 @@ ApplicationWindow {
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         anchors.margins: 20
+        color: "black"
         visible: false
 
     }
