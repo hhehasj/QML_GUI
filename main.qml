@@ -8,6 +8,7 @@ ApplicationWindow {
     visible: true
     width: Screen.width * 0.6
     height: Screen.height * 0.70
+    color: white
 
     // -----------------------
     // Start Button
@@ -116,6 +117,7 @@ ApplicationWindow {
             font.pointSize: 40
             font.family: "Comic Sans MS"
             font.bold: true
+            color: "black"
             anchors.horizontalCenter: parent.horizontalCenter
 
         }
@@ -137,6 +139,7 @@ ApplicationWindow {
                 placeholderText: "Type here ..."
                 font.pointSize: 20
                 font.family: "Comic Sans MS"
+                color: "black"
                 leftPadding: 15
                 verticalAlignment: TextInput.AlignVCenter
 
@@ -192,6 +195,7 @@ ApplicationWindow {
         font.pointSize: 18
         font.family: "Comic Sans MS"
         font.bold: true
+        color: "black"
         anchors.top: contentColumn.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.topMargin: 20
@@ -210,6 +214,7 @@ ApplicationWindow {
         font.pointSize: 25
         font.family: "Comic Sans MS"
         font.bold: true
+        color: "black"
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         anchors.margins: 20
