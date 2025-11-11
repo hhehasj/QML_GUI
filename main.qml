@@ -8,7 +8,7 @@ ApplicationWindow {
     visible: true
     width: Screen.width * 0.6
     height: Screen.height * 0.70
-    color: white
+    color: "white"
 
     // -----------------------
     // Start Button
