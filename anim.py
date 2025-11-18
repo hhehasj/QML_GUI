@@ -19,11 +19,7 @@ class Backend(QObject):
     def show_content(self):
 
         root = self.engine.rootObjects()[0]
-        # start_button: QObject = root.findChild(QObject, "start_button") # uses the objectName: "start_button" from test.qml
         tries_lbl: QObject = root.findChild(QObject, "tries_lbl") # uses the objectName: "tries_lbl" from test.qml
-
-        # start_button.setParent(None) 
-        # start_button.deleteLater() 
 
         tries_lbl.setProperty("visible", True)
         column: QObject = root.findChild(QObject, "contentColumn")
@@ -128,10 +124,6 @@ class Backend(QObject):
 
                 else:
                     self.right_or_wrong.emit(False, "")
-
-
-
-        
         
 
 # <---------What runs the app------------->
@@ -146,7 +138,7 @@ engine.rootContext().setContextProperty("backend", backend)
 
 
 # Load QML file
-engine.load("main.qml")
+engine.load("anim.qml")
 
 
 if not engine.rootObjects():
